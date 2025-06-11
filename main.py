@@ -41,4 +41,5 @@ model.train(
     pretrained=True,
     verbose=True,
     save_period=1,
+    exist_ok=True,
 )
