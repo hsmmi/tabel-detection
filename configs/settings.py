@@ -13,6 +13,10 @@ SPLIT_RATIOS = {
     "test": 0.05,
 }
 # Training config
+MODEL_DIR = "models"
+YOLO_MODEL = "yolov12s.pt"
+MODEL_PATH = f"{MODEL_DIR}/{YOLO_MODEL}"
+DATA_CONFIG = "configs/yolov12_custom.yaml"
 EPOCHS = 30
 BATCH_SIZE = 8
 MODEL_NAME = "yolov8n.pt"

@@ -1,11 +1,13 @@
 import os
 from ultralytics import YOLO
+from configs.settings import MODEL_PATH, DATA_CONFIG, TARGET_IMAGE_SIZE
+from scripts.create_yolo_config import create_yolo_config
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-YOLO_MODEL = "yolov12s.pt"
-YOLO_MODEL_PATH = os.path.join(BASE_DIR, YOLO_MODEL)
-DATA_CONFIG = os.path.join(BASE_DIR, "configs", "yolov12_custom.yaml")
-IMAGE_SIZE = 1024  # Set the image size for training
+YOLO_MODEL_PATH = MODEL_PATH  # Path to the YOLOv12 model weights
+DATA_CONFIG = DATA_CONFIG
+IMAGE_SIZE = TARGET_IMAGE_SIZE
+
+create_yolo_config(DATA_CONFIG)
 
 # YOLOv12 small model
 model = YOLO(YOLO_MODEL_PATH)

@@ -1,8 +1,7 @@
-path: data/
+names:
+- table
+nc: 1
+path: data/split_resized_640x640
+test: images/test
 train: images/train
 val: images/val
-test: images/test
-
-# workers: 6
-nc: 1
-names: ['table']
