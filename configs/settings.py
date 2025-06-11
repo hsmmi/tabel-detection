@@ -19,6 +19,5 @@ MODEL_PATH = f"{MODEL_DIR}/{YOLO_MODEL}"
 DATA_CONFIG = "configs/yolov12_custom.yaml"
 EPOCHS = 30
 BATCH_SIZE = 8
-MODEL_NAME = "yolov8n.pt"
-PROJECT_NAME = "runs"
+PROJECT_NAME = f"outputs/{YOLO_MODEL.split('.')[0]}"
 EXPERIMENT_NAME = "table-run-python"
