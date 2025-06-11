@@ -10,6 +10,7 @@ IMAGE_SIZE = TARGET_IMAGE_SIZE
 create_yolo_config(DATA_CONFIG)
 
 # YOLOv12 small model
+print(f"Using YOLOv12 model at: {YOLO_MODEL_PATH}")
 model = YOLO(YOLO_MODEL_PATH)
 
 # Train with custom config
