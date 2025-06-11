@@ -1,7 +1,8 @@
-path: data/
+path: yolov12-tabel-detection/data/
 train: images/train
 val: images/val
 test: images/test
 
+# workers: 6
 nc: 1
 names: ['table']

@@ -2,6 +2,8 @@ import os
 from PIL import Image
 from pathlib import Path
 
+Image.MAX_IMAGE_PIXELS = None
+
 target_size = 1024
 orginal_image_dir = Path("yolov12-tabel-detection/data/all_original/images")
 resize_image_dir = Path(
