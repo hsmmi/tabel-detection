@@ -1,6 +1,12 @@
 import os
 from ultralytics import YOLO
-from configs.settings import MODEL_PATH, DATA_CONFIG, TARGET_IMAGE_SIZE, PROJECT_NAME
+from configs.settings import (
+    MODEL_PATH,
+    DATA_CONFIG,
+    TARGET_IMAGE_SIZE,
+    PROJECT_NAME,
+    EPOCHS,
+)
 from scripts.create_yolo_config import create_yolo_config
 
 
@@ -39,7 +45,7 @@ else:
 # Train with custom config
 model.train(
     data=DATA_CONFIG,
-    epochs=30,
+    epochs=EPOCHS,
     imgsz=IMAGE_SIZE,
     batch=8,
     project=PROJECT_NAME,
