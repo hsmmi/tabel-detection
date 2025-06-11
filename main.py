@@ -27,7 +27,7 @@ create_yolo_config(DATA_CONFIG)
 
 # YOLOv12 small model
 # Check if there is a previous checkpoint to resume from
-checkpoint_dir = os.path.join(PROJECT_NAME, "weights")
+checkpoint_dir = os.path.join(PROJECT_NAME, "table-run-python", "weights")
 
 last_checkpoint = get_last_checkpoint(checkpoint_dir)
 
@@ -36,7 +36,6 @@ if last_checkpoint:
     model = YOLO(last_checkpoint)
 else:
     model = YOLO(YOLO_MODEL_PATH)
-
 # Train with custom config
 model.train(
     data=DATA_CONFIG,
