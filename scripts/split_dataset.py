@@ -5,9 +5,9 @@ from pathlib import Path
 random.seed(42)
 
 # config
-source_img_dir = Path("yolov12-tabel-detection/data/all_resized_1024x1024/images")
-source_lbl_dir = Path("yolov12-tabel-detection/data/all_resized_1024x1024/labels")
-out_base = Path("yolov12-tabel-detection/data")
+source_img_dir = Path("data/all_resized_1024x1024/images")
+source_lbl_dir = Path("data/all_resized_1024x1024/labels")
+out_base = Path("data")
 
 # collect all base filenames (no extension)
 all_files = [f.stem for f in source_img_dir.glob("*.png")]

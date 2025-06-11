@@ -1,4 +1,4 @@
-path: yolov12-tabel-detection/data/
+path: data/
 train: images/train
 val: images/val
 test: images/test

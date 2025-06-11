@@ -1,3 +1,1 @@
-# AI Internship
-
-## First task: Train YOLOV12
+# YOLOv12 Custom Project
